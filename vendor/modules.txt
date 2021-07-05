@@ -36,6 +36,22 @@ github.com/mitchellh/go-homedir
 # github.com/morikuni/aec v1.0.0
 ## explicit
 github.com/morikuni/aec
+# github.com/openfaas/faas-cli v0.0.0-20210624144552-38f62308d58b => ./
+## explicit
+github.com/openfaas/faas-cli/builder
+github.com/openfaas/faas-cli/commands
+github.com/openfaas/faas-cli/config
+github.com/openfaas/faas-cli/exec
+github.com/openfaas/faas-cli/flags
+github.com/openfaas/faas-cli/proxy
+github.com/openfaas/faas-cli/schema
+github.com/openfaas/faas-cli/schema/knative/v1
+github.com/openfaas/faas-cli/schema/openfaas/v1
+github.com/openfaas/faas-cli/schema/store/v2
+github.com/openfaas/faas-cli/stack
+github.com/openfaas/faas-cli/test
+github.com/openfaas/faas-cli/version
+github.com/openfaas/faas-cli/versioncontrol
 # github.com/openfaas/faas-provider v0.18.5
 ## explicit
 github.com/openfaas/faas-provider/httputil
@@ -68,3 +84,4 @@ gopkg.in/yaml.v2
 # gotest.tools v1.4.0
 ## explicit
 # golang.org/x/sys => golang.org/x/sys v0.0.0-20200826173525-f9321e4c35a6
+# github.com/openfaas/faas-cli => ./

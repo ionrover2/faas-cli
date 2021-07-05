@@ -1,10 +1,12 @@
-module github.com/openfaas/faas-cli
+module github.com/ionrover2/faas-cli
 
 go 1.15
 
 // replace github.com/docker/docker => github.com/docker/engine v1.4.2-0.20190717161051-705d9623b7c1
 
 replace golang.org/x/sys => golang.org/x/sys v0.0.0-20200826173525-f9321e4c35a6
+
+replace github.com/openfaas/faas-cli => ./
 
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
@@ -16,6 +18,7 @@ require (
 	github.com/gotestyourself/gotestyourself v1.4.0 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/morikuni/aec v1.0.0
+	github.com/openfaas/faas-cli v0.0.0-20210624144552-38f62308d58b
 	github.com/openfaas/faas-provider v0.18.5
 	github.com/openfaas/faas/gateway v0.0.0-20210311210633-a6dbb4cd0285
 	github.com/pkg/errors v0.9.1
