@@ -39,7 +39,7 @@ jobs:
             GIT_COMMIT=${{ github.sha }}
             REPO_URL=https://github.com/${{ env.USER_REPO }}
           load: true
-          tags: openfaas/faas-cli:${{ github.sha }}
+          tags: ionrover2/faas-cli:${{ github.sha }}
       -
         name: Test for multi-arch build
         uses: docker/build-push-action@v2
@@ -54,11 +54,11 @@ jobs:
             VERSION=latest-dev
             GIT_COMMIT=${{ github.sha }}
             REPO_URL=https://github.com/${{ env.USER_REPO }}
-          tags: openfaas/faas-cli:${{ github.sha }}
+          tags: ionrover2/faas-cli:${{ github.sha }}
       - 
         name: Copy binary to host
         run: |
-          docker create --name faas-cli openfaas/faas-cli:${{ github.sha }} && \
+          docker create --name faas-cli ionrover2/faas-cli:${{ github.sha }} && \
           mkdir -p ./bin && \
           docker cp faas-cli:/usr/bin/faas-cli ./bin && \
           docker rm -f faas-cli
